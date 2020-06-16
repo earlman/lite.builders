@@ -14,7 +14,7 @@ const path = require('path')
 const sass = require('node-sass-promise')
 const CleanCSS = require('clean-css')
 
-const inputFile = path.join(__dirname, '../_includes/scss/main.scss')
+const inputFile = path.join(__dirname, '../_includes/scss/index.sass')
 const outputFile = path.join(__dirname, '../css/style.css')
 
 const comment = `/* This is an example comment */`
