@@ -1,0 +1,52 @@
+@import "a_utility/_index"
+@import "b_color/_index"
+@import "c_typography/_index"
+@import "d_spacing/_index"
+@import "e_layout/_index"
+
+
+body 
+    font-family: "Merriweather"
+    background-color: var(--color-b)
+    color: var(--color-t)
+    min-height: 100vh
+    overflow-x: hidden
+
+main
+    max-width: 600px
+    margin: auto
+
+    &.buyadomain
+        margin-top: calc(var(--space-lg) * -1)
+
+h1 
+    font-size: 2.369em
+
+
+ol
+    margin-top: var(--space-md)
+    list-style: none
+    counter-reset: item
+    padding: 0
+
+    li 
+        @include space-stack(var(--space-xs))
+        counter-increment: item
+
+        &:before 
+            margin-right: var(--space-sm)
+            content: counter(item)
+            color: var(--color-t)
+            text-align: center
+            display: inline-block
+
+code 
+    font-size: .75em
+    line-height: 1
+ 
+
+// background
+.bg-top, .bg-bot
+    width: 100%
+
+.bg-bot-container
