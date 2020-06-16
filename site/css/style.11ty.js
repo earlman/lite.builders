@@ -1,3 +1,15 @@
+
+/**
+ *
+ * This file:
+ * 1) Compiles SASS from _includes/scss/
+ * 2) Cleans resulting CSS
+ * 3) Outputs CSS to dist/css/
+ *
+ */
+
+
+
 const path = require('path')
 const sass = require('node-sass-promise')
 const CleanCSS = require('clean-css')
